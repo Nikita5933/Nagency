@@ -1,9 +1,12 @@
+//body {
+//  background-color: #fefefe;
+//}
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 .header {
-  padding: 18px 0 0 0;
+  padding: 18px 0 79px 0;
   overflow-x: hidden;
   position: relative;
   &__head-wrapper {
@@ -154,5 +157,76 @@
     }
   }
   }
+.service {
+  margin-top: 130px;
+  margin-bottom: 150px;
+  &__title {
+    margin: 17px auto 73px auto;
+    text-align: center;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 381px));
+    grid-template-rows: repeat(2, minmax(320px, auto));
+    gap: 32px 28px;
+    justify-content: center;
+  }
+  &__item {
+    padding: 36px 52px 24px 36px;
+    border: 1px solid #E5EAF1;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+    &-title {
+      margin-top: 65px;
+      margin-bottom: 12px;
+    }
+    &:hover {
+      box-shadow: 0 4px 64px rgba(35, 40, 105, 0.08);
+    }
+  }
+  &__desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-color-grey;
+    margin-bottom: 22px;
+  }
+  &__link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $main-color-blue;
+    text-decoration: none;
+    position: relative;
+    transition: opacity .3s;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../../assets/img/icons/arrow.svg") no-repeat;
+      top: 1px;
+      right: -37px;
+      width: 24px;
+      height: 20px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.works {
+  &__title {
+    margin: 16px auto 54px auto;
+    text-align: center;
+  }
+  &__video {
+    display: block;
+    margin: 0 auto 167px auto;
+    border-radius: 32px;
+    & video {
+      border-radius: 32px;
+    }
+  }
+}
 
 

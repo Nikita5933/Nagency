@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Nagency</title>
 </head>
@@ -88,5 +90,69 @@
         </div>
     </div>
 </header>
+<section class="service">
+    <div class="container">
+        <a href="#" class="link-page">Our Service</a>
+        <h2 class="title title_fz48 service__title">What Can We Bring for You</h2>
+        <div class="service__items">
+            <div class="service__item">
+                <img src="assets/img/icons/chart.svg" alt="chart">
+                <div class="title title_fz24 service__item-title">Consultant Plan</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+            <div class="service__item">
+                <img src="assets/img/icons/graph.svg" alt="graph">
+                <div class="title title_fz24 service__item-title">Design Thingking</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+            <div class="service__item">
+                <img src="assets/img/icons/filter.svg" alt="filter">
+                <div class="title title_fz24 service__item-title">SEO Marketing</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+            <div class="service__item">
+                <img src="assets/img/icons/work.svg" alt="work">
+                <div class="title title_fz24 service__item-title">Business Advisor</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+            <div class="service__item">
+                <img src="assets/img/icons/heart.svg" alt="heart">
+                <div class="title title_fz24 service__item-title">Brand Personal</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+            <div class="service__item">
+                <img src="assets/img/icons/activity.svg" alt="activity">
+                <div class="title title_fz24 service__item-title">Development</div>
+                <div class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <a href="#" class="service__link">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="works">
+    <div class="container">
+        <a href="#" class="link-page">Our Works</a>
+        <h2 class="title title_fz48 works__title">This is How We Works</h2>
+        <video
+                class="video-js works__video vjs-theme-forest"
+                controls
+                preload="auto"
+                width="855"
+                height="505"
+                poster="assets/img/poster.png"
+                data-setup="{}"
+        >
+            <source src="assets/video/video.mp4" type="video/mp4" />
+            <source src="assets/video/video.webm" type="video/webm" />
+            <p class="vjs-no-js">Для просмотра этого видео, пожалуйста, включите JavaScript и перейдите на версию веб-браузер, который<a href="https://videojs.com/html5-video-support/" target="_blank">поддерживает видео HTML5</a></p>
+        </video>
+    </div>
+</section>
+<script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
 </body>
 </html>
