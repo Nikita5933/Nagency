@@ -26,4 +26,8 @@
   justify-content: center;
   color: $main-color-pink;
   text-decoration: none;
+  transition: opacity .2s;
+  &:hover {
+    opacity: .8;
+  }
 }

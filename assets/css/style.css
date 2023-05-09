@@ -57,7 +57,10 @@
   display: flex;
   justify-content: center;
   color: #F0899C;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: opacity .2s; }
+  .link-page:hover {
+    opacity: .8; }
 
 .container {
   width: 1200px;
@@ -117,8 +120,7 @@
     gap: 35px 39px;
     transform: matrix(1, 0.09, -0.11, 0.99, 0, 0); }
   .header__pict {
-    position: relative;
-    transition: opacity 1s; }
+    position: relative; }
     .header__pict:hover .header__pict-layer {
       opacity: 1; }
     .header__pict_second {
@@ -144,6 +146,16 @@
       left: 26px;
       opacity: 0;
       transition: opacity .2s; }
+      .header__pict-layer::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 61px;
+        border-width: 10px;
+        border-top-width: 0;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: #fff; }
     .header__pict-name {
       font-family: 'Inter', sans-serif;
       font-weight: 600;
@@ -244,5 +256,112 @@
   border-radius: 32px; }
   .works__video video {
     border-radius: 32px; }
+
+.team__link {
+  justify-content: start; }
+.team__title {
+  margin: 16px auto 48px auto; }
+.team__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 171px));
+  justify-content: space-between;
+  margin-bottom: 182px; }
+.team__item {
+  position: relative; }
+  .team__item img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .team__item:hover .team__layer {
+    opacity: 1; }
+  .team__item:nth-child(1) {
+    transform: matrix(1, -0.04, 0.03, 1, 0, 0); }
+    .team__item:nth-child(1):hover {
+      transform: matrix(1, -0.04, 0.03, 1, 0, 0) scale(1.2); }
+  .team__item:nth-child(2) {
+    transform: matrix(1, 0.01, -0.02, 1, 0, 0); }
+    .team__item:nth-child(2):hover {
+      transform: matrix(1, 0.01, -0.02, 1, 0, 0) scale(1.2); }
+  .team__item:nth-child(3) {
+    transform: matrix(1, -0.04, 0.03, 1, 0, 0); }
+    .team__item:nth-child(3):hover {
+      transform: matrix(1, -0.04, 0.03, 1, 0, 0) scale(1.2); }
+  .team__item:nth-child(4) {
+    transform: matrix(1, 0.04, -0.06, 1, 0, 0); }
+    .team__item:nth-child(4):hover {
+      transform: matrix(1, 0.04, -0.06, 1, 0, 0) scale(1.2); }
+  .team__item:nth-child(5) {
+    transform: matrix(1, -0.03, 0.02, 1, 0, 0); }
+    .team__item:nth-child(5):hover {
+      transform: matrix(1, -0.03, 0.02, 1, 0, 0) scale(1.2); }
+  .team__item:nth-child(6) {
+    transform: matrix(1, 0.05, -0.07, 1, 0, 0); }
+    .team__item:nth-child(6):hover {
+      transform: matrix(1, 0.05, -0.07, 1, 0, 0) scale(1.2); }
+.team__layer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  width: 140px;
+  height: 68px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  bottom: 9px;
+  left: 14px;
+  opacity: 0;
+  transition: opacity .2s; }
+  .team__layer::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 61px;
+    border-width: 10px;
+    border-top-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #fff; }
+.team__name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #0F172A; }
+.team__post {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #657790; }
+
+.solutions__title {
+  margin: 16px auto 54px auto;
+  text-align: center; }
+.solutions__wrapper {
+  padding: 45px 0;
+  margin-bottom: 150px;
+  border: 1px solid #E5EAF1;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between; }
+.solutions__item {
+  padding: 0 60px; }
+  .solutions__item-title {
+    margin-top: 77px;
+    margin-bottom: 12px; }
+  .solutions__item:nth-child(1) {
+    border-right: 1px solid #E5EAF1; }
+  .solutions__item:nth-child(2) {
+    border-right: 1px solid #E5EAF1; }
+.solutions__desc {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #657790; }
 
 /*# sourceMappingURL=style.css.map */
