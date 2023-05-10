@@ -17,7 +17,7 @@
   align-items: center;
   text-decoration: none;
   border-radius: 5px;
-  transition: opacity 0.3s; }
+  transition: opacity 0.3s, background-color .3s; }
   .btn_xs {
     width: 110px;
     height: 44px;
@@ -26,8 +26,25 @@
     width: 130px;
     height: 56px;
     background-color: #00B5E2; }
+  .btn_m-blue {
+    width: 150px;
+    height: 56px;
+    background-color: #00B5E2; }
+  .btn_l-blue {
+    width: 199px;
+    height: 56px;
+    background: #00B5E2;
+    color: white; }
   .btn:hover {
     opacity: 0.8; }
+  .btn_l-white {
+    width: 199px;
+    height: 56px;
+    background: #FFFFFF;
+    color: black; }
+    .btn_l-white:hover {
+      background-color: #f1f1f1;
+      opacity: 1; }
 
 .active-menu a {
   color: #0F172A;
@@ -440,5 +457,143 @@
       transform: rotate(2.02deg); }
       .projects__item:nth-child(6) .projects__layer {
         transform: rotate(-2.09deg); }
+
+.pricing {
+  margin-bottom: 150px; }
+  .pricing__link {
+    justify-content: start; }
+  .pricing__title {
+    margin-top: 16px;
+    margin-bottom: 32px; }
+  .pricing__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #657790;
+    margin-bottom: 48px; }
+  .pricing__container {
+    display: grid;
+    grid-template-columns: minmax(auto, auto) minmax(258px, 318px) minmax(258px, 318px);
+    column-gap: 24px; }
+  .pricing__wrapper-benefits {
+    margin-right: 38px; }
+
+.card {
+  padding: 31px 0 47px 0;
+  max-width: 318px;
+  min-height: 476px;
+  border-radius: 12px;
+  border: 1px solid #E5EAF1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box; }
+  .card_business {
+    background-color: #F0899C; }
+  .card__container {
+    width: 100%;
+    height: 100%;
+    padding: 0 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; }
+  .card__title {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    margin-bottom: 2px;
+    line-height: 32px;
+    color: #0F172A; }
+    .card__title_w {
+      color: #FFFFFF; }
+  .card__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 24px;
+    color: #657790; }
+    .card__subtitle_w {
+      color: #FFFFFF; }
+  .card__price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    color: #0F172A; }
+    .card__price_w {
+      color: #FFFFFF; }
+    .card__price-month {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: #0F172A; }
+      .card__price-month_w {
+        color: #FFFFFF; }
+  .card__divider {
+    height: 1px;
+    width: 100%;
+    background-color: #E5EAF1;
+    margin-bottom: 32px; }
+    .card__divider_op {
+      opacity: 0.3; }
+  .card__item {
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 17px;
+    line-height: 24px;
+    color: #657790; }
+    .card__item_w {
+      color: #FFFFFF; }
+  .card__btn {
+    margin-top: 22px; }
+
+.testimonials {
+  overflow-x: hidden;
+  margin-bottom: 180px; }
+  .testimonials__title {
+    margin: 16px auto 64px auto;
+    text-align: center; }
+  .testimonials__wrapper-first {
+    width: 1880px;
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    transform: translateX(-374px); }
+  .testimonials__wrapper-second {
+    width: 1880px;
+    display: flex;
+    gap: 24px;
+    margin: 30px auto 0 auto;
+    transform: translateX(-167px);
+    padding-bottom: 80px; }
+  .testimonials__review {
+    padding: 21px 14px 18px 21px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 14px;
+    min-width: 406px;
+    max-width: 406px;
+    height: 95px;
+    background: #FFFFFF;
+    box-shadow: 0 44px 94px rgba(0, 0, 0, 0.06);
+    border-radius: 80px; }
+    .testimonials__review img {
+      width: 52px;
+      height: 52px; }
+  .testimonials__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #657790; }
 
 /*# sourceMappingURL=style.css.map */
