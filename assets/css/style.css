@@ -364,4 +364,81 @@
   line-height: 32px;
   color: #657790; }
 
+.projects {
+  margin-bottom: 160px; }
+  .projects__title {
+    margin: 16px auto 65px auto;
+    text-align: center; }
+  .projects__layer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    width: 140px;
+    height: 68px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    bottom: 15px;
+    left: 125px;
+    opacity: 0;
+    transition: opacity .2s; }
+    .projects__layer::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: 61px;
+      border-width: 10px;
+      border-top-width: 0;
+      border-style: solid;
+      border-color: transparent;
+      border-bottom-color: #fff; }
+  .projects__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #0F172A; }
+  .projects__post {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #657790; }
+  .projects__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; }
+  .projects__item {
+    position: relative; }
+    .projects__item:hover .projects__layer {
+      opacity: 1; }
+    .projects__item:nth-child(1) {
+      transform: rotate(0.89deg); }
+      .projects__item:nth-child(1) .projects__layer {
+        transform: rotate(-2.89deg); }
+    .projects__item:nth-child(2) {
+      transform: rotate(-2.33deg); }
+      .projects__item:nth-child(2) .projects__layer {
+        transform: rotate(2.49deg); }
+    .projects__item:nth-child(3) {
+      transform: rotate(2.99deg); }
+      .projects__item:nth-child(3) .projects__layer {
+        transform: rotate(-2.8deg); }
+    .projects__item:nth-child(4) {
+      transform: rotate(-2.53deg); }
+      .projects__item:nth-child(4) .projects__layer {
+        transform: rotate(2.29deg); }
+    .projects__item:nth-child(5) {
+      transform: rotate(-0.46deg); }
+      .projects__item:nth-child(5) .projects__layer {
+        transform: rotate(3.69deg); }
+    .projects__item:nth-child(6) {
+      transform: rotate(2.02deg); }
+      .projects__item:nth-child(6) .projects__layer {
+        transform: rotate(-2.09deg); }
+
 /*# sourceMappingURL=style.css.map */
