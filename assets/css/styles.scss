@@ -640,5 +640,62 @@
     color: $text-color-grey;
   }
 }
+.questions {
+  overflow-x: hidden;
+  position: relative;
+    &__link {
+      justify-content: start;
+    }
+    &__wrapper {
+    display: grid;
+      grid-template-columns: minmax(440px, 540px) 1fr;
+      margin-bottom: 150px;
+  }
+  &__pic-wrapper {
+    display: flex;
+    gap: 9px;
+    height: 572px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+  }
+  &__summary {
+    padding-left: 35px;
+    padding-top: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: $text-color-black;
+    list-style-type: none;
+    margin-bottom: 10px;
+
+  }
+  &__details {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-color-grey;
+    position: relative;
+    border-bottom: 1px solid #E5EAF1;
+    padding-bottom: 16px;
+    &::before {
+      content: '';
+      border-bottom: 3px solid $text-color-grey;
+      border-right: 3px solid $text-color-grey;
+      width: 9px;
+      height: 9px;
+      display: block;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 25px;
+      left: 5px;
+    }
+    &[open]::before {
+      transform: rotate(225deg);
+      top: 30px;
+    }
+  }
+}
 
 
