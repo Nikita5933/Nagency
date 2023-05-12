@@ -21,7 +21,7 @@
   .btn_xs {
     width: 110px;
     height: 44px;
-    background-color: #F0899C; }
+    background-color: #f6a3b2; }
   .btn_s-blue {
     width: 130px;
     height: 56px;
@@ -45,6 +45,13 @@
     .btn_l-white:hover {
       background-color: #f1f1f1;
       opacity: 1; }
+  .btn_s-pink {
+    width: 130px;
+    height: 56px;
+    background-color: #f6a3b2; }
+    .btn_s-pink:hover {
+      background-color: #fcacbb;
+      opacity: 1; }
 
 .active-menu a {
   color: #0F172A;
@@ -62,6 +69,11 @@
     font-size: 48px;
     line-height: 66px;
     letter-spacing: -2px; }
+    .title_fz48_w {
+      font-size: 48px;
+      line-height: 66px;
+      letter-spacing: -2px;
+      color: white; }
   .title_fz24 {
     font-size: 24px;
     line-height: 35px;
@@ -73,7 +85,7 @@
   font-size: 18px;
   display: flex;
   justify-content: center;
-  color: #F0899C;
+  color: #f6a3b2;
   text-decoration: none;
   transition: opacity .2s; }
   .link-page:hover {
@@ -86,7 +98,9 @@
 .header {
   padding: 18px 0 79px 0;
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 2048px;
+  margin: 0 auto; }
   .header__head-wrapper {
     display: flex;
     justify-content: space-between; }
@@ -490,7 +504,7 @@
   flex-direction: column;
   box-sizing: border-box; }
   .card_business {
-    background-color: #F0899C; }
+    background-color: #f6a3b2; }
   .card__container {
     width: 100%;
     height: 100%;
@@ -598,13 +612,15 @@
 
 .questions {
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 2048px;
+  margin: 0 auto; }
   .questions__link {
     justify-content: start; }
   .questions__wrapper {
     display: grid;
     grid-template-columns: minmax(440px, 540px) 1fr;
-    margin-bottom: 150px; }
+    margin-bottom: 215px; }
   .questions__pic-wrapper {
     display: flex;
     gap: 9px;
@@ -644,5 +660,44 @@
     .questions__details[open]::before {
       transform: rotate(225deg);
       top: 30px; }
+
+.contact {
+  margin-top: 126px; }
+  .contact__wrapper {
+    min-height: 600px;
+    background: url("../img/contact-bg.png") no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: 513px 1fr; }
+    .contact__wrapper-img {
+      position: absolute;
+      top: -66px;
+      left: 21px; }
+  .contact__section {
+    padding: 71px 70px 0 0;
+    grid-column: 2 / 3;
+    justify-self: center;
+    z-index: 1; }
+  .contact__head-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center; }
+  .contact__title {
+    text-align: center;
+    margin: 16px 0; }
+  .contact__desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 478px;
+    margin: 0 auto 16px auto; }
+  .contact__btn {
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

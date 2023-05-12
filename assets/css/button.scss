@@ -22,6 +22,7 @@
     height: 56px;
     background-color: $main-color-blue;
   }
+
   &_m-blue {
     width: 150px;
     height: 56px;
@@ -46,6 +47,16 @@
       background-color: #f1f1f1;
       opacity: 1;
     }
+  }
+  &_s-pink {
+    width: 130px;
+    height: 56px;
+    background-color: $main-color-pink;
+    &:hover {
+      background-color: #fcacbb;
+      opacity: 1;
+    }
+
   }
 }
 .active-menu a {
