@@ -9,11 +9,6 @@
       right: -150px;
     }
   }
-  .team {
-    &__wrapper {
-      transform: translateX(-30px);
-    }
-  }
   .projects {
     &__wrapper {
       align-items: center;
@@ -39,6 +34,11 @@
           transform: scale(0.9);
         }
       }
+    }
+  }
+  .footer {
+    &__wrapper {
+      gap: 56px;
     }
   }
 }
@@ -83,6 +83,20 @@
     &__section {
       padding: 50px 35px;
     }
+  }
+  .footer {
+    &__wrapper {
+      gap: 32px;
+    }
+    &__links-wr {
+      column-gap: 31px;
+    }
+    &__media {
+      flex-wrap: wrap;
+    }
+  }
+  .footer__copyright_mob {
+    margin-top: 34px;
   }
 }
 @media (max-width: 991px) {
@@ -149,6 +163,23 @@
   .contact {
     margin-top: 0;
   }
+  .footer {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    &__copyright {
+      display: none;
+    }
+    &__form {
+      &-btn {
+        right: 9px;
+      }
+    }
+  }
+  .footer__copyright_mob {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .burger {
@@ -200,6 +231,7 @@
   }
   .header {
     overflow: hidden;
+    padding-bottom: 10px;
     &__menu {
       display: flex;
       flex-direction: column;
@@ -212,18 +244,23 @@
         display: none;
       }
     }
+    &__title {
+      padding-top: 0;
+    }
   }
   .btn_mobile {
     display: flex;
   }
   .service {
     margin-top: 60px;
+    margin-bottom: 75px;
     &__items {
       grid-template-columns: repeat(1, minmax(250px, 381px));
       grid-template-rows: repeat(auto-fit, minmax(320px, auto));
     }
   }
   .works {
+    margin-bottom: 75px;
     &__wrapper {
       height: 300px;
     }
@@ -231,11 +268,13 @@
   .team {
     &__wrapper {
       transform: translateX(-387px);
+      margin-bottom: 75px;
     }
   }
   .solutions {
     &__wrapper {
       flex-wrap: wrap;
+      margin-bottom: 75px;
     }
     &__item {
       padding: 0 30px;
@@ -250,7 +289,14 @@
       margin-bottom: 48px;
     }
   }
+  .projects {
+    margin-bottom: 75px;
+  }
+  .pricing {
+    margin-bottom: 75px;
+  }
   .testimonials {
+    margin-bottom: 75px;
     &__wrapper-first {
       transform: translateX(-750px);
     }
@@ -258,9 +304,23 @@
       transform: translateX(-580px);
     }
   }
+  .questions {
+    &__wrapper {
+      margin-bottom: 75px;
+    }
+  }
   .contact {
     &__wrapper {
       background-position-x: -400px;
+    }
+  }
+  .footer {
+    &__text {
+      margin-bottom: 20px;
+      max-width: initial;
+    }
+    &__links-wr {
+      column-gap: 90px;
     }
   }
 }
@@ -371,6 +431,16 @@
     &__wrapper {
       margin-bottom: 100px;
     }
+  }
+  .footer {
+    &__text {
+      margin-bottom: 20px;
+      max-width: initial;
+    }
+    &__links-wr {
+      column-gap: 68px;
+    }
+
   }
 }
 @media (max-width: 350px)  {
