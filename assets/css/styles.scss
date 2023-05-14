@@ -3,6 +3,17 @@
   width: 1200px;
   margin: 0 auto;
 }
+.burger {
+  &-icon {
+    display: none;
+  }
+  &-button {
+    display: none;
+  }
+  &__nav-close {
+    display: none;
+  }
+}
 .header {
   padding: 18px 0 79px 0;
   overflow-x: hidden;
@@ -225,6 +236,7 @@
   }
 }
 .works {
+  margin-bottom: 167px;
   &__title {
     margin: 16px auto 54px auto;
     text-align: center;
@@ -237,8 +249,22 @@
       border-radius: 32px;
     }
   }
+  &__wrapper {
+    max-width: 855px;
+    height: 505px;
+    margin: 0 auto;
+  }
+}
+.vjs_video_3-dimensions {
+  width: 100%;
+  height: 100%;
+}
+.vjs-poster img {
+  object-fit: cover;
+  border-radius: 32px;
 }
 .team {
+  overflow-x: hidden;
   &__link {
     justify-content: start;
   }
@@ -246,8 +272,9 @@
     margin: 16px auto 48px auto;
   }
   &__wrapper {
+    width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 171px));
+    grid-template-columns: repeat(auto-fit, 171px);
     justify-content: space-between;
     margin-bottom: 182px;
   }

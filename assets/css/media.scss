@@ -1,8 +1,236 @@
 @media (max-width: 1399px) {
+  .container {
+    width: 95%;
+  }
+  .header {
+    &__pictures {
+      transform: matrix(1, 0.09, -0.11, 0.99, 0, 0) scale(0.75);
+      top: 96px;
+      right: -150px;
+    }
+  }
+  .team {
+    &__wrapper {
+      transform: translateX(-30px);
+    }
+  }
+  .projects {
+    &__wrapper {
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .header {
+    &__pictures {
+      transform: matrix(1, 0.09, -0.11, 0.99, 0, 0) scale(0.68);
+    }
+    &__block {
+      max-width: 470px;
+    }
+  }
+  .team {
+    &__wrapper {
+      transform: translateX(-32px);
+    }
+  }
 }
 @media (max-width: 991px) {
+  .header {
+    &__pictures {
+      display: none;
+    }
+    &__block {
+      max-width: initial;
+    }
+    &__menu {
+      width: 480px;
+    }
+  }
+  .service {
+    &__items {
+      grid-template-columns: repeat(2, minmax(250px, 381px));
+      grid-template-rows: repeat(auto-fit, minmax(320px, auto));
+    }
+  }
+  .team {
+    &__wrapper {
+      transform: translateX(-157px);
+    }
+  }
+  .solutions {
+    &__item {
+      padding: 0 40px;
+    }
+  }
+
 }
 @media (max-width: 767px) {
+  .burger {
+    &__wrapper {
+      position: absolute;
+      height: 100vh;
+      width: 300px;
+      right: -2.46vw;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      background-color: #f3f3f3;
+      transition: opacity .5s;
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-icon {
+      display: initial;
+      & svg {
+        width: 16px;
+        height: 16px;
+      }
+      cursor: pointer;
+    }
+    &-button {
+      display: none;
+      &:checked ~ .burger__wrapper{
+        visibility: initial;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+    &__nav-close {
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      display: block;
+      & svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .header {
+    overflow: hidden;
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      gap: 50px;
+      &-btn {
+        display: none;
+      }
+    }
+  }
+  .btn_mobile {
+    display: flex;
+  }
+  .service {
+    margin-top: 60px;
+    &__items {
+      grid-template-columns: repeat(1, minmax(250px, 381px));
+      grid-template-rows: repeat(auto-fit, minmax(320px, auto));
+    }
+  }
+  .works {
+    &__wrapper {
+      height: 300px;
+    }
+  }
+  .team {
+    &__wrapper {
+      transform: translateX(-387px);
+    }
+  }
+  .solutions {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__item {
+      padding: 0 30px;
+      &:nth-child(1) {
+        border: none;
+      }
+      &:nth-child(2) {
+        border: none;
+      }
+    }
+    &__desc {
+      margin-bottom: 48px;
+    }
+  }
+
 }
 @media (max-width: 575px) {
+  .header {
+    &__title {
+      font-size: 48px;
+      padding-top: 10px;
+    }
+    &__review {
+      margin-top: 48px;
+    }
+  }
+  .service {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+      letter-spacing: 0;
+    }
+  }
+  .works {
+    margin-bottom: 100px;
+    &__wrapper {
+      height: 204px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  .team {
+    &__wrapper {
+      transform: translateX(-532px) scale(0.94);
+      margin-bottom: 100px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 39px;
+    }
+  }
+  .solutions {
+    &__title {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+    &__wrapper {
+      margin-bottom: 100px;
+    }
+  }
+  .projects {
+    margin-bottom: 100px;
+    &__title {
+      margin-top: 8px;
+      font-size: 32px;
+      margin-bottom: 41px;
+      letter-spacing: 0;
+    }
+    &__item {
+      max-width: 320px;
+      & img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }
