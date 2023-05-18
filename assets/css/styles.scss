@@ -504,6 +504,54 @@ body {
     text-align: center;
   }
 }
+.page-service {
+  margin-top: 166px;
+  margin-bottom: 154px;
+  position: relative;
+  min-height: 2767px;
+  overflow-x: hidden;
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  &__wrapper {
+    width: 1144px;
+    position: absolute;
+    top: 0;
+    right: -47px;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &-title {
+      margin-top: 16px;
+      margin-bottom: 24px;
+      text-align: start;
+    }
+  }
+  &__block {
+    max-width: 514px;
+  }
+  &__img {
+    &:nth-child(1) {
+      transform: rotate(-1.55deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(2.27deg);
+    }
+  }
+  &__desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-color-grey;
+  }
+
+}
 .service {
   margin-top: 130px;
   margin-bottom: 150px;
