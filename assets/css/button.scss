@@ -40,8 +40,13 @@
   &_mobile {
     display: none;
   }
-
   &_l-blue {
+    width: 195px;
+    height: 56px;
+    background: $main-color-blue;
+    color: white;
+  }
+  &_xl-blue {
     width: 199px;
     height: 56px;
     background: $main-color-blue;
@@ -50,7 +55,7 @@
   &:hover {
     opacity: 0.8;
   }
-  &_l-white {
+  &_xl-white {
     width: 199px;
     height: 56px;
     background: #FFFFFF;
