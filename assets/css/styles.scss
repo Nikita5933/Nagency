@@ -190,7 +190,7 @@ body {
       grid-column: 2/3;
     }
   }
-  &_about {
+  &_alternative {
     background-color: #F8FBFF;
     height: 396px;
     min-height: 396px;
@@ -230,6 +230,13 @@ body {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
+      }
+    }
+    & p {
+      color: $text-color-grey;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
       }
     }
     &::before {
@@ -1321,6 +1328,30 @@ body {
   &__btn {
     margin: 32px auto 186px auto;
 
+  }
+}
+.conditions {
+  margin-bottom: 100px;
+  &__container {
+    max-width: 895px;
+    padding-left: 120px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__block {
+    margin-bottom: 55px;
+    position: relative;
+  }
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-color-grey;
+  }
+  &__list {
+    padding-left: 26px;
   }
 }
 
