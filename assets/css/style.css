@@ -1204,12 +1204,10 @@ body {
 
 .conditions {
   margin-bottom: 100px; }
-  .conditions__container {
-    max-width: 895px;
-    padding-left: 120px; }
   .conditions__title {
     margin-bottom: 20px; }
   .conditions__block {
+    max-width: 895px;
     margin-bottom: 55px;
     position: relative; }
   .conditions__text {
@@ -1220,6 +1218,48 @@ body {
     color: #657790; }
   .conditions__list {
     padding-left: 26px; }
+
+.policy {
+  margin-top: 98px;
+  margin-bottom: 150px; }
+  .policy__block {
+    margin-bottom: 42px;
+    max-width: 1035px; }
+    .policy__block_big {
+      margin-bottom: 64px; }
+  .policy__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #657790; }
+  .policy__title {
+    margin-bottom: 20px; }
+  .policy__subtitle {
+    font-family: 'Inter', sans-serif;
+    color: #0F172A;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    margin-bottom: 24px;
+    margin-top: 42px; }
+  .policy__list {
+    padding-left: 0; }
+    .policy__list li {
+      margin-bottom: 24px;
+      line-height: initial;
+      list-style-type: none;
+      position: relative;
+      padding-left: 27px; }
+      .policy__list li::before {
+        position: absolute;
+        content: "";
+        background: url("../img/icons/check.svg") no-repeat;
+        width: 16px;
+        height: 16px;
+        top: 4px;
+        left: 0; }
 
 @media (max-width: 1399px) {
   .container {
