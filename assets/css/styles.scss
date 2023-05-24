@@ -1013,6 +1013,9 @@ body {
 .testimonials {
   overflow-x: hidden;
   margin-bottom: 180px;
+  &__page {
+    margin-top: 100px;
+  }
   &__title {
     margin: 16px auto 64px auto;
     text-align: center;
@@ -1474,5 +1477,122 @@ body {
     margin: 0 auto 64px auto;
   }
 }
+.says {
+  margin-bottom: 150px;
+  &__title {
+    margin-top: 16px;
+    margin-bottom: 67px;
+    max-width: 823px;
+  }
+  &__link {
+    justify-content: start;
+  }
+  &__slider {
+    margin-left: calc(((100vw - 1200px) / 2) - 8.4px);
+  }
+}
+
+.carousel {
+  position: relative;
+  padding-top: 36%;
+  &__title {
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-color-grey;
+    margin-bottom: 29px;
+  }
+  &__name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-color-blue;
+    opacity: 0.8;
+  }
+  &__post {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color-grey;
+    opacity: 0.8;
+  }
+  &__block {
+    max-width: 316px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__flex {
+    width: 414px;
+  }
+  &__img {
+    width: 236px;
+    height: 337px;
+  }
+  &__viewport {
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    list-style-type: none;
+  }
+  &__slide {
+    position: relative;
+    flex: 0 0 61%;
+    width: 61%;
+  }
+  &__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    gap: 48px;
+  }
+  &__navigation {
+    position: absolute;
+    right: 82px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  &__navigation {
+    &-list, &-item {
+      display: inline-block;
+      padding-left: 0;
+      padding-right: 4px;
+    }
+    &-button {
+      display: inline-block;
+      width: 27px;
+      height: 6px;
+      background: rgba(0, 181, 226, 0.34);
+      border-radius: 3px;
+      transition: transform 0.1s;
+      &_active {
+        background-color: $main-color-blue;
+      }
+      &:hover {
+        background-color: $main-color-blue;
+      }
+    }
+  }
+}
+
 
 
