@@ -917,6 +917,78 @@ body {
   &__wrapper-benefits {
     margin-right: 38px;
   }
+  &-cards {
+    margin: 100px 0 150px 0;
+    &__title {
+      max-width: 478px;
+      margin: 16px auto 48px auto;
+      text-align: center;
+    }
+    &__wrapper {
+      max-width: 1002px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-table {
+    margin-bottom: 150px;
+    &__title {
+      margin: 16px auto 48px auto;
+      text-align: center;
+    }
+    &__wrapper {
+      height: 127px;
+      max-width: 960px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      & > .pricing-table__tbold {
+        align-self: flex-end;
+      }
+      &_btn {
+        width: 453px;
+        height: 84px;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        margin-right: 29px;
+      }
+    }
+    &__tbold {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: $text-color-black;
+      letter-spacing: -0.5px;
+    }
+    &__ttext {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $text-color-black;
+    }
+    &__text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: $text-color-black;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &_big {
+      padding: 38px 0 16px 0;
+    }
+  }
 }
 .card {
   padding: 31px 0 47px 0;
@@ -928,7 +1000,7 @@ body {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  &_business {
+  &_pink {
     background-color: $main-color-pink;
   }
   &__container {
@@ -1763,5 +1835,29 @@ body {
   }
 }
 
+
+.table {
+  width: 100%;
+  max-width: 960px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: auto;
+  margin: 0 auto;
+  & tr > td:nth-child(1) {
+    width: 195px;
+    border-left: none;
+  }
+  & tr > td:nth-child(2), & tr > td:nth-child(3), & tr > td:nth-child(4) {
+    text-align: center;
+  }
+  & tr > td:nth-child(4) {
+    border-right: none;
+  }
+  & td, & th {
+    border: 1px solid #D4D4D8;
+    height: 48px;
+    box-sizing: border-box;
+  }
+}
 
 
