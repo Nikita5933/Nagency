@@ -1948,6 +1948,85 @@ body {
     display: flex;
     justify-content: space-evenly; }
 
+.project-name {
+  margin-top: 80px;
+  margin-bottom: 152px; }
+  .project-name__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .project-name__aside {
+    width: 344px;
+    height: 318px;
+    background: #F8FBFF;
+    border-radius: 16px;
+    padding: 50px 20px 40px 33px;
+    box-sizing: border-box; }
+  .project-name__block {
+    margin-bottom: 33px;
+    font-family: 'Inter', sans-serif; }
+    .project-name__block:last-child {
+      margin-bottom: 0; }
+    .project-name__block-bold {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0F172A; }
+    .project-name__block-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #657790; }
+  .project-name__section {
+    max-width: 790px; }
+  .project-name__head {
+    display: grid;
+    grid-template-columns: minmax(433px, 533px) 124px;
+    grid-template-rows: 30px 1fr;
+    column-gap: 117px;
+    margin-bottom: 48px; }
+  .project-name__link {
+    justify-content: flex-start; }
+  .project-name__title {
+    margin: 16px 0 0 0;
+    grid-column: 1 / 2; }
+  .project-name__web {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    opacity: .8;
+    color: #00B5E2;
+    padding-left: 35px;
+    position: relative;
+    text-decoration: none;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: flex-end; }
+    .project-name__web::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 4px;
+      left: 0;
+      background: url("../../assets/img/icons/web.svg") no-repeat; }
+    .project-name__web:hover {
+      opacity: 1; }
+  .project-name__text {
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #657790;
+    font-size: 18px;
+    line-height: 32px; }
+  .project-name__pict {
+    margin-top: 48px;
+    margin-bottom: 64px; }
+  .project-name__subtitle {
+    margin: 0 0 12px 0; }
+
 @media (max-width: 1399px) {
   .container {
     width: 95%; }
