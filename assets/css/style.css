@@ -766,6 +766,8 @@ body {
 
 .projects {
   margin-bottom: 160px; }
+  .projects_page {
+    margin-top: 100px; }
   .projects__title {
     margin: 16px auto 65px auto;
     text-align: center; }
@@ -811,7 +813,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px; }
+    gap: 25px; }
   .projects__item {
     position: relative; }
     .projects__item:hover .projects__layer {
@@ -1938,6 +1940,13 @@ body {
   #image-display figcaption {
     text-align: center;
     font-size: 14px; }
+
+.trusted {
+  margin-bottom: 150px; }
+  .trusted__wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly; }
 
 @media (max-width: 1399px) {
   .container {

@@ -795,6 +795,9 @@ body {
 }
 .projects {
   margin-bottom: 160px;
+  &_page {
+    margin-top: 100px;
+  }
   &__title {
     margin: 16px auto 65px auto;
     text-align: center;
@@ -845,7 +848,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
   }
   &__item {
     position: relative;
@@ -2217,5 +2220,12 @@ text-align: center;
     font-size: 14px;
   }
 }
-
+.trusted {
+  margin-bottom: 150px;
+  &__wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 
