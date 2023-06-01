@@ -27,6 +27,7 @@ body {
 .header {
   width: 100%;
   min-height: 100%;
+  max-height: 1280px;
   flex-grow: 1;
   padding: 18px 0 79px 0;
   overflow-x: hidden;
@@ -1382,6 +1383,7 @@ body {
     letter-spacing: -0.04em;
     color: $main-color-pink;
     padding-top: 60px;
+    margin-bottom: 0;
   }
   &__subtitle {
     font-family: 'Inter', sans-serif;
@@ -1501,6 +1503,7 @@ body {
     margin-top: 24px;
     transition: opacity .3s;
     background-color: #FFFFFF;
+    cursor: pointer;
     &:hover {
       opacity: .7;
     }

@@ -143,6 +143,7 @@ body {
 .header {
   width: 100%;
   min-height: 100%;
+  max-height: 1280px;
   flex-grow: 1;
   padding: 18px 0 79px 0;
   overflow-x: hidden;
@@ -1251,7 +1252,8 @@ body {
     text-align: center;
     letter-spacing: -0.04em;
     color: #F0899C;
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin-bottom: 0; }
   .not-found__subtitle {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -1352,7 +1354,8 @@ body {
     position: relative;
     margin-top: 24px;
     transition: opacity .3s;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    cursor: pointer; }
     .detail-service__tab:hover {
       opacity: .7; }
     .detail-service__tab::before {
