@@ -1354,6 +1354,7 @@ body {
     display: flex;
     justify-content: space-between;
     & svg {
+      margin-top: 6px;
       &:hover {
         opacity:  .8;
       }
