@@ -2149,7 +2149,10 @@ body {
     align-self: flex-start; }
   .page-service__item {
     justify-content: center;
-    gap: 30px; } }
+    gap: 30px; }
+
+  .detail-service__block {
+    max-width: 580px; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2209,7 +2212,15 @@ body {
     padding: 69px 81px; }
 
   .page-service__img {
-    width: 311px; } }
+    width: 311px; }
+
+  .detail-service__wrapper {
+    justify-content: flex-start;
+    gap: 50px; }
+  .detail-service__tab {
+    width: 260px; }
+  .detail-service__block {
+    max-width: 430px; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2297,7 +2308,8 @@ body {
   .solutions__wrapper {
     flex-wrap: wrap;
     max-width: 450px;
-    margin: 0 auto 75px auto; }
+    margin: 0 auto 75px auto;
+    padding-bottom: 0; }
   .solutions__item {
     padding: 0 30px; }
     .solutions__item:nth-child(1) {
@@ -2353,7 +2365,16 @@ body {
       .page-service__item:nth-child(2n) .page-service__img {
         order: 1; }
       .page-service__item:nth-child(2n) .page-service__block {
-        order: 2; } }
+        order: 2; }
+
+  .detail-service {
+    margin: 70px 0; }
+    .detail-service__wrapper {
+      flex-wrap: wrap; }
+    .detail-service__block {
+      max-width: initial; }
+    .detail-service__tab {
+      width: 293px; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2482,7 +2503,21 @@ body {
     line-height: 35px;
     margin: 32px 0 12px 0; }
   .page-service__desc {
-    max-width: 286px; } }
+    max-width: 286px; }
+
+  .detail-service__tab {
+    width: 330px; }
+  .detail-service__wrapper {
+    gap: 80px; }
+  .detail-service__block-title {
+    font-size: 32px;
+    line-height: 52px;
+    margin-bottom: 24px; }
+  .detail-service__block-text {
+    margin-bottom: 24px; }
+  .detail-service__video {
+    margin-bottom: 24px;
+    height: 182px; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; } }
@@ -2497,7 +2532,10 @@ body {
       width: 100%; }
 
   .page-service__img {
-    width: 270px; } }
+    width: 270px; }
+
+  .detail-service__tab {
+    width: 260px; } }
 @media (max-height: 420px) {
   .header__menu {
     gap: 20px; } }
