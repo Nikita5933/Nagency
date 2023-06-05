@@ -550,20 +550,11 @@ body {
     text-align: center; }
 
 .page-service {
-  margin-top: 166px;
-  margin-bottom: 154px;
-  position: relative;
-  min-height: 2767px;
-  overflow-x: hidden; }
+  margin: 150px 0; }
   .page-service__title {
     margin-top: 16px;
     margin-bottom: 64px;
     text-align: center; }
-  .page-service__wrapper {
-    width: 1144px;
-    position: absolute;
-    top: 0;
-    right: -47px; }
   .page-service__item {
     width: 100%;
     display: flex;
@@ -2150,7 +2141,15 @@ body {
     margin-top: 34px; }
 
   .about__pictures {
-    transform: matrix(1, 0.09, -0.11, 0.99, 0, 0) scale(0.9); } }
+    transform: matrix(1, 0.09, -0.11, 0.99, 0, 0) scale(0.9); }
+
+  .page-service__img {
+    width: 400px;
+    object-fit: contain;
+    align-self: flex-start; }
+  .page-service__item {
+    justify-content: center;
+    gap: 30px; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2207,7 +2206,10 @@ body {
     margin: 0 auto; }
 
   .fact__wrapper {
-    padding: 69px 81px; } }
+    padding: 69px 81px; }
+
+  .page-service__img {
+    width: 311px; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2336,9 +2338,22 @@ body {
 
   .burger__wrapper_alt {
     right: 0; }
+    .burger__wrapper_alt .burger__nav-close {
+      right: 7px; }
 
   .fact__wrapper {
-    padding: 40px 20px; } }
+    padding: 40px 20px; }
+
+  .page-service {
+    margin: 70px 0; }
+    .page-service__item {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 64px; }
+      .page-service__item:nth-child(2n) .page-service__img {
+        order: 1; }
+      .page-service__item:nth-child(2n) .page-service__block {
+        order: 2; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2455,7 +2470,19 @@ body {
     margin-bottom: 100px; }
     .visions__title {
       font-size: 32px;
-      line-height: 52px; } }
+      line-height: 52px; }
+
+  .page-service__title {
+    font-size: 32px;
+    line-height: 52px;
+    max-width: 300px;
+    margin: 16px auto 42px auto; }
+  .page-service__item-title {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 32px 0 12px 0; }
+  .page-service__desc {
+    max-width: 286px; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; } }
@@ -2467,7 +2494,10 @@ body {
     width: 100%;
     height: initial; }
     .maximize__img > img {
-      width: 100%; } }
+      width: 100%; }
+
+  .page-service__img {
+    width: 270px; } }
 @media (max-height: 420px) {
   .header__menu {
     gap: 20px; } }

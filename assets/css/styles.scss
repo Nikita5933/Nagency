@@ -524,22 +524,13 @@ body {
   }
 }
 .page-service {
-  margin-top: 166px;
-  margin-bottom: 154px;
-  position: relative;
-  min-height: 2767px;
-  overflow-x: hidden;
+  margin: 150px 0;
   &__title {
     margin-top: 16px;
     margin-bottom: 64px;
     text-align: center;
   }
-  &__wrapper {
-    width: 1144px;
-    position: absolute;
-    top: 0;
-    right: -47px;
-  }
+
   &__item {
     width: 100%;
     display: flex;
