@@ -23,6 +23,9 @@ body {
   &__nav-close {
     display: none;
   }
+  &__wrapper {
+    z-index: 2;
+  }
 }
 .header {
   width: 100%;
@@ -438,7 +441,9 @@ body {
   }
   &__img {
     position: relative;
-    max-width: 328px;
+    width: 328px;
+    height: 468px;
+
     &:hover {
       .maximize__layer {
         opacity: 1;

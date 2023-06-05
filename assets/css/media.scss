@@ -117,6 +117,11 @@
   .footer__copyright_mob {
     margin-top: 34px;
   }
+  .about {
+    &__pictures {
+      transform: matrix(1, 0.09, -0.11, 0.99, 0, 0) scale(0.9);
+    }
+  }
 }
 @media (max-width: 991px) {
   .header {
@@ -183,6 +188,29 @@
   .footer__copyright_mob {
     display: block;
   }
+  .about {
+    margin: 100px 0;
+    &__pictures {
+      display: none;
+    }
+    &__block {
+      max-width: initial;
+    }
+  }
+  .maximize {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    &__img {
+      margin: 0 auto;
+    }
+  }
+  .fact {
+    &__wrapper {
+      padding: 69px 81px;
+    }
+  }
 }
 @media (max-width: 767px) {
   .burger {
@@ -235,6 +263,9 @@
   .header {
     overflow: hidden;
     padding-bottom: 10px;
+    &_alternative {
+      position: initial;
+    }
     &__menu {
       display: flex;
       flex-direction: column;
@@ -344,6 +375,18 @@
       }
     }
   }
+  .burger {
+    &__wrapper {
+      &_alt {
+        right: 0;
+      }
+    }
+  }
+  .fact {
+    &__wrapper {
+      padding: 40px 20px;
+    }
+  }
 }
 @media (max-width: 575px) {
   .header {
@@ -353,6 +396,17 @@
     }
     &__review {
       margin-top: 48px;
+    }
+    &__page {
+      &-title {
+        font-size: 48px;
+        line-height: 66px;
+        margin-top: 54px;
+      }
+    }
+    &_alternative {
+      height: 300px;
+      min-height: 300px;
     }
   }
   .service {
@@ -463,6 +517,36 @@
     }
 
   }
+  .about {
+    &__title {
+      font-size: 32px;
+      line-height: 52px;
+    }
+  }
+  .maximize {
+    margin-bottom: 100px;
+    &__title {
+      font-size: 32px;
+      line-height: 52px;
+    }
+  }
+  .fact {
+    margin-bottom: 100px;
+    &__wrapper {
+      padding: 90px 75px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+  .visions {
+    margin-bottom: 100px;
+    &__title {
+      font-size: 32px;
+      line-height: 52px;
+    }
+  }
+
 }
 @media (max-width: 450px) {
   .footer {
@@ -473,11 +557,33 @@
     }
   }
 }
-@media (max-width: 350px)  {
+@media (max-width: 355px)  {
   .card {
     &__container {
       padding: 0 35px;
     }
   }
-
+  .maximize {
+    &__img {
+      width: 100%;
+      height: initial;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-height: 420px) {
+  .header {
+    &__menu {
+      gap: 20px;
+    }
+  }
+}
+@media (max-height: 300px) {
+  .header {
+    &__menu {
+      gap: 10px;
+    }
+  }
 }
