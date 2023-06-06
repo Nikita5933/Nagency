@@ -262,6 +262,26 @@
       justify-content: center;
     }
   }
+  .pricing {
+    &-cards {
+      &__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+      }
+      &__btn {
+        margin: 66px auto 0 auto;
+      }
+    }
+    &-table {
+      &__wrapper {
+        &_btn {
+          margin-right: 20px;
+          width: 52%;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
   .burger {
@@ -477,6 +497,18 @@
     }
     &__snapper {
       gap: 20px;
+    }
+  }
+  .pricing {
+    &-table {
+      &__service {
+        display: none;
+      }
+      &__wrapper {
+        &_btn {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -702,6 +734,42 @@
       position: static;
     }
   }
+  .pricing {
+    &-cards {
+      margin: 70px 0;
+      &__title {
+        font-size: 32px;
+        line-height: 52px;
+        margin-bottom: 16px;
+        text-align: initial;
+      }
+      &__text-mobile {
+        display: block;
+      }
+    }
+    &-table {
+      margin-bottom: 70px;
+      &__title {
+        margin: 8px auto 24px auto;
+        font-size: 32px;
+        line-height: 52px;
+        max-width: 279px;
+      }
+      &__block {
+        gap: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+      &__wrapper {
+        height: initial;
+        &_btn {
+          height: initial;
+          flex-direction: column;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 450px) {
   .footer {
@@ -710,6 +778,11 @@
         padding-right: 56px;
       }
     }
+  }
+}
+@media (max-width: 374px) {
+  .pricing-table {
+    display: none;
   }
 }
 @media (max-width: 355px)  {
@@ -737,6 +810,7 @@
       width: 260px;
     }
   }
+
 }
 @media (max-height: 420px) {
   .header {

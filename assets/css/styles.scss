@@ -377,6 +377,9 @@ body {
   }
 }
 .span {
+  &_bold {
+    font-weight: 900;
+  }
   &_count {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -924,6 +927,15 @@ body {
       margin: 16px auto 48px auto;
       text-align: center;
     }
+    &__text-mobile {
+      display: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: $text-color-grey;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
     &__wrapper {
       max-width: 1002px;
       margin: 0 auto;
@@ -947,7 +959,7 @@ body {
         align-self: flex-end;
       }
       &_btn {
-        width: 453px;
+        width: 485px;
         height: 84px;
         display: flex;
         justify-content: space-between;

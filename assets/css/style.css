@@ -426,6 +426,8 @@ body {
     opacity: 0.8;
     color: #657790; }
 
+.span_bold {
+  font-weight: 900; }
 .span_count {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -864,6 +866,14 @@ body {
       max-width: 478px;
       margin: 16px auto 48px auto;
       text-align: center; }
+    .pricing-cards__text-mobile {
+      display: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #657790;
+      line-height: 32px;
+      margin-bottom: 40px; }
     .pricing-cards__wrapper {
       max-width: 1002px;
       margin: 0 auto;
@@ -883,7 +893,7 @@ body {
       .pricing-table__wrapper > .pricing-table__tbold {
         align-self: flex-end; }
       .pricing-table__wrapper_btn {
-        width: 453px;
+        width: 485px;
         height: 84px;
         display: flex;
         justify-content: space-between;
@@ -2218,7 +2228,17 @@ body {
     flex: 0 0 100%;
     width: 100%; }
   .carousel__snapper {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .pricing-cards__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; }
+  .pricing-cards__btn {
+    margin: 66px auto 0 auto; }
+  .pricing-table__wrapper_btn {
+    margin-right: 20px;
+    width: 52%; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2378,7 +2398,12 @@ body {
     font-size: 24px;
     line-height: 35px; }
   .carousel__snapper {
-    gap: 20px; } }
+    gap: 20px; }
+
+  .pricing-table__service {
+    display: none; }
+  .pricing-table__wrapper_btn {
+    width: 100%; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2539,10 +2564,40 @@ body {
     flex-wrap: wrap;
     justify-content: initial; }
   .carousel__navigation {
-    position: static; } }
+    position: static; }
+
+  .pricing-cards {
+    margin: 70px 0; }
+    .pricing-cards__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 16px;
+      text-align: initial; }
+    .pricing-cards__text-mobile {
+      display: block; }
+  .pricing-table {
+    margin-bottom: 70px; }
+    .pricing-table__title {
+      margin: 8px auto 24px auto;
+      font-size: 32px;
+      line-height: 52px;
+      max-width: 279px; }
+    .pricing-table__block {
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center; }
+    .pricing-table__wrapper {
+      height: initial; }
+      .pricing-table__wrapper_btn {
+        height: initial;
+        flex-direction: column;
+        margin-bottom: 30px; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; } }
+@media (max-width: 374px) {
+  .pricing-table {
+    display: none; } }
 @media (max-width: 355px) {
   .card__container {
     padding: 0 35px; }
