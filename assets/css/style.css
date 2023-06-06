@@ -1400,12 +1400,9 @@ body {
     max-width: 823px; }
   .says__link {
     justify-content: start; }
-  .says__slider {
-    margin-left: calc(((100vw - 1200px) / 2) - 8.4px); }
 
 .carousel {
-  position: relative;
-  padding-top: 36%; }
+  position: relative; }
   .carousel__title {
     margin-bottom: 12px;
     margin-top: 0; }
@@ -1442,24 +1439,15 @@ body {
     height: 337px; }
   .carousel__viewport {
     padding-left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     list-style-type: none; }
   .carousel__slide {
-    position: relative;
     flex: 0 0 61%;
     width: 61%; }
   .carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     scroll-snap-align: center;
@@ -1468,7 +1456,7 @@ body {
   .carousel__navigation {
     position: absolute;
     right: 82px;
-    bottom: 0;
+    bottom: -55px;
     left: 0;
     text-align: center; }
   .carousel__navigation-list, .carousel__navigation-item {
@@ -2152,7 +2140,11 @@ body {
     gap: 30px; }
 
   .detail-service__block {
-    max-width: 580px; } }
+    max-width: 580px; }
+
+  .carousel__slide {
+    flex: 0 0 78%;
+    width: 78%; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2220,7 +2212,13 @@ body {
   .detail-service__tab {
     width: 260px; }
   .detail-service__block {
-    max-width: 430px; } }
+    max-width: 430px; }
+
+  .carousel__slide {
+    flex: 0 0 100%;
+    width: 100%; }
+  .carousel__snapper {
+    justify-content: center; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2374,7 +2372,13 @@ body {
     .detail-service__block {
       max-width: initial; }
     .detail-service__tab {
-      width: 293px; } }
+      width: 293px; }
+
+  .carousel__title {
+    font-size: 24px;
+    line-height: 35px; }
+  .carousel__snapper {
+    gap: 20px; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2517,7 +2521,25 @@ body {
     margin-bottom: 24px; }
   .detail-service__video {
     margin-bottom: 24px;
-    height: 182px; } }
+    height: 182px; }
+
+  .says {
+    margin-bottom: 70px; }
+    .says__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 44px; }
+
+  .carousel__img {
+    width: 164px;
+    height: 234px; }
+  .carousel__title {
+    max-width: 330px; }
+  .carousel__snapper {
+    flex-wrap: wrap;
+    justify-content: initial; }
+  .carousel__navigation {
+    position: static; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; } }
