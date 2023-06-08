@@ -2154,7 +2154,17 @@ body {
 
   .carousel__slide {
     flex: 0 0 78%;
-    width: 78%; } }
+    width: 78%; }
+
+  .contact-page__wrapper {
+    padding: 25px; }
+  .contact-page__block {
+    max-width: 400px; }
+  .contact-page__form-email {
+    max-width: 188px;
+    margin-right: 6px; }
+  .contact-page__form-phone {
+    max-width: 188px; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2238,7 +2248,22 @@ body {
     margin: 66px auto 0 auto; }
   .pricing-table__wrapper_btn {
     margin-right: 20px;
-    width: 52%; } }
+    width: 52%; }
+
+  .contact-page__location a {
+    display: block; }
+    .contact-page__location a::after {
+      top: 12px; }
+  .contact-page__title {
+    font-size: 44px; }
+  .contact-page__form-email {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 6px; }
+  .contact-page__form-phone {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2403,7 +2428,18 @@ body {
   .pricing-table__service {
     display: none; }
   .pricing-table__wrapper_btn {
-    width: 100%; } }
+    width: 100%; }
+
+  .contact-page__location a::after {
+    top: 0; }
+  .contact-page__block {
+    max-width: 100%; }
+  .contact-page__wrapper {
+    flex-wrap: wrap;
+    padding: 40px 24px;
+    justify-content: center; }
+  .contact-page__form {
+    max-width: 100%; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2591,10 +2627,28 @@ body {
       .pricing-table__wrapper_btn {
         height: initial;
         flex-direction: column;
-        margin-bottom: 30px; } }
+        margin-bottom: 30px; }
+
+  .contact-page {
+    margin: 70px 0; }
+    .contact-page__location a::after {
+      top: 12px; }
+    .contact-page__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 40px; }
+    .contact-page__wrapper {
+      padding: 40px 28px; }
+    .contact-page__form {
+      margin-top: 40px; }
+      .contact-page__form-name, .contact-page__form-email, .contact-page__form-phone {
+        margin-bottom: 24px; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; } }
+@media (max-height: 420px) {
+  .header__menu {
+    gap: 20px; } }
 @media (max-width: 374px) {
   .pricing-table {
     display: none; } }
@@ -2612,10 +2666,12 @@ body {
     width: 270px; }
 
   .detail-service__tab {
-    width: 260px; } }
-@media (max-height: 420px) {
-  .header__menu {
-    gap: 20px; } }
+    width: 260px; }
+
+  .contact-page__location, .contact-page__phone, .contact-page__email {
+    font-size: 14px; }
+    .contact-page__location a, .contact-page__phone a, .contact-page__email a {
+      font-size: 14px; } }
 @media (max-height: 300px) {
   .header__menu {
     gap: 10px; } }

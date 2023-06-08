@@ -144,7 +144,23 @@
       width: 78%;
     }
   }
-
+  .contact-page {
+    &__wrapper {
+      padding: 25px;
+    }
+    &__block {
+      max-width: 400px;
+    }
+    &__form {
+      &-email {
+        max-width: 188px;
+        margin-right: 6px;
+      }
+      &-phone {
+        max-width: 188px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -279,6 +295,31 @@
           margin-right: 20px;
           width: 52%;
         }
+      }
+    }
+  }
+  .contact-page {
+    &__location {
+      & a {
+        display: block;
+        &::after {
+          top: 12px;
+        }
+      }
+    }
+    &__title {
+      font-size: 44px;
+    }
+    &__form {
+      &-email {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 6px;
+      }
+      &-phone {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 40px;
       }
     }
   }
@@ -509,6 +550,27 @@
           width: 100%;
         }
       }
+    }
+  }
+  .contact-page {
+    &__location {
+      & a {
+        &::after {
+          top: 0;
+        }
+      }
+    }
+    &__block {
+      max-width: 100%;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      padding: 40px 24px;
+      justify-content: center;
+    }
+
+    &__form {
+      max-width: 100%;
     }
   }
 }
@@ -770,6 +832,31 @@
       }
     }
   }
+  .contact-page {
+    margin: 70px 0;
+    &__location {
+      & a {
+        &::after {
+          top: 12px;
+        }
+      }
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 40px;
+    }
+    &__wrapper {
+      padding: 40px 28px;
+    }
+
+    &__form {
+      margin-top: 40px;
+      &-name, &-email, &-phone {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
 @media (max-width: 450px) {
   .footer {
@@ -777,6 +864,13 @@
       &-input {
         padding-right: 56px;
       }
+    }
+  }
+}
+@media (max-height: 420px) {
+  .header {
+    &__menu {
+      gap: 20px;
     }
   }
 }
@@ -810,15 +904,16 @@
       width: 260px;
     }
   }
-
-}
-@media (max-height: 420px) {
-  .header {
-    &__menu {
-      gap: 20px;
+  .contact-page {
+    &__location, &__phone, &__email {
+      font-size: 14px;
+      & a {
+        font-size: 14px;
+      }
     }
   }
 }
+
 @media (max-height: 300px) {
   .header {
     &__menu {
