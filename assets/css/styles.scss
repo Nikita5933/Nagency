@@ -1918,7 +1918,7 @@ body {
   }
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 258px);
+    grid-template-columns: repeat(4, 258px);
     grid-template-rows: 91px;
     justify-content: space-between;
   }

@@ -1682,7 +1682,7 @@ body {
   margin: 16px 0 40px 0; }
 .position__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 258px);
+  grid-template-columns: repeat(4, 258px);
   grid-template-rows: 91px;
   justify-content: space-between; }
 .position__item {
@@ -2156,15 +2156,37 @@ body {
     flex: 0 0 78%;
     width: 78%; }
 
+  .contact-page__location a {
+    display: block; }
   .contact-page__wrapper {
     padding: 25px; }
   .contact-page__block {
     max-width: 400px; }
   .contact-page__form-email {
-    max-width: 188px;
+    max-width: 220px;
     margin-right: 6px; }
   .contact-page__form-phone {
-    max-width: 188px; } }
+    max-width: 220px; }
+
+  .position__wrapper {
+    grid-template-columns: repeat(3, 258px);
+    justify-content: center;
+    gap: 40px; }
+  .position__item:nth-child(4) {
+    grid-column: 2/3; }
+
+  .join-form__wrapper {
+    padding: 25px;
+    gap: 0; }
+  .join-form__block {
+    max-width: 400px; }
+  .join-form__location a {
+    display: block; }
+  .join-form__form-email {
+    max-width: 220px;
+    margin-right: 6px; }
+  .join-form__form-phone {
+    max-width: 220px; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2250,10 +2272,8 @@ body {
     margin-right: 20px;
     width: 52%; }
 
-  .contact-page__location a {
-    display: block; }
-    .contact-page__location a::after {
-      top: 12px; }
+  .contact-page__location a::after {
+    top: 12px; }
   .contact-page__title {
     font-size: 44px; }
   .contact-page__form-email {
@@ -2263,7 +2283,27 @@ body {
   .contact-page__form-phone {
     max-width: 100%;
     width: 100%;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .our-team__wrapper {
+    grid-template-columns: repeat(2, minmax(260px, 303px)); }
+
+  .position__wrapper {
+    grid-template-columns: repeat(2, 258px);
+    justify-content: space-evenly; }
+
+  .join-form__location a::after {
+    top: 12px; }
+  .join-form__title {
+    font-size: 44px; }
+  .join-form__form-email {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 6px; }
+  .join-form__form-phone {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 24px; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2439,6 +2479,24 @@ body {
     padding: 40px 24px;
     justify-content: center; }
   .contact-page__form {
+    max-width: 100%; }
+
+  .our-team__wrapper {
+    grid-template-columns: repeat(2, minmax(200px, 303px)); }
+
+  .position__wrapper {
+    gap: 20px; }
+
+  .join-form__location a::after {
+    top: 0; }
+  .join-form__block {
+    max-width: 100%; }
+  .join-form__wrapper {
+    flex-wrap: wrap;
+    padding: 40px 24px;
+    justify-content: center; }
+  .join-form__form {
+    margin-top: 44px;
     max-width: 100%; } }
 @media (max-width: 575px) {
   .header__title {
@@ -2642,6 +2700,46 @@ body {
     .contact-page__form {
       margin-top: 40px; }
       .contact-page__form-name, .contact-page__form-email, .contact-page__form-phone {
+        margin-bottom: 24px; }
+
+  .our-team {
+    margin: 70px 0; }
+    .our-team__title {
+      margin: 8px auto 40px auto;
+      font-size: 32px;
+      line-height: 52px;
+      max-width: 300px; }
+    .our-team__wrapper {
+      grid-template-columns: minmax(200px, 303px); }
+
+  .position__link {
+    justify-content: center; }
+  .position__title {
+    margin: 16px 0 32px 0;
+    text-align: center;
+    font-size: 32px;
+    line-height: 52px; }
+  .position__wrapper {
+    grid-template-columns: 258px;
+    gap: 40px; }
+  .position__item:nth-child(4) {
+    grid-column: 1; }
+
+  .join-form {
+    margin: 65px 0 70px 0; }
+    .join-form__location a::after {
+      top: 12px; }
+    .join-form__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 16px; }
+    .join-form__text {
+      margin-bottom: 32px; }
+    .join-form__wrapper {
+      padding: 40px 24px; }
+    .join-form__form {
+      margin-top: 40px; }
+      .join-form__form-name, .join-form__form-email, .join-form__form-phone {
         margin-bottom: 24px; } }
 @media (max-width: 450px) {
   .footer__form-input {
@@ -2671,6 +2769,14 @@ body {
   .contact-page__location, .contact-page__phone, .contact-page__email {
     font-size: 14px; }
     .contact-page__location a, .contact-page__phone a, .contact-page__email a {
+      font-size: 14px; }
+
+  .our-team__wrapper {
+    grid-template-columns: minmax(200px, 255px); }
+
+  .join-form__location, .join-form__phone, .join-form__email {
+    font-size: 14px; }
+    .join-form__location a, .join-form__phone a, .join-form__email a {
       font-size: 14px; } }
 @media (max-height: 300px) {
   .header__menu {
