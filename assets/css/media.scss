@@ -243,6 +243,7 @@
   .questions {
     &__wrapper {
       grid-template-columns: 1fr;
+      margin-bottom: 75px;
     }
     &__pic-wrapper {
       display: none;
@@ -398,6 +399,12 @@
       }
     }
   }
+  .trusted {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
 }
 @media (max-width: 767px) {
   .burger {
@@ -536,11 +543,6 @@
     }
     &__wrapper-second {
       transform: translateX(-580px);
-    }
-  }
-  .questions {
-    &__wrapper {
-      margin-bottom: 75px;
     }
   }
   .contact {
@@ -1026,12 +1028,29 @@
       }
     }
   }
+  .projects_page {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 450px) {
   .footer {
     &__form {
       &-input {
         padding-right: 56px;
+      }
+    }
+  }
+  .trusted {
+    margin-bottom: 100px;
+    &__hourglass {
+      display: block;
+    }
+    &__wrapper {
+      padding: 0 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      & img {
+        width: 100%;
       }
     }
   }

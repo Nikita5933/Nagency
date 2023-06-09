@@ -1144,7 +1144,6 @@ body {
   }
 }
 .questions {
-  overflow-x: hidden;
   position: relative;
   max-width: 2048px;
   margin: 0 auto;
@@ -2226,6 +2225,9 @@ text-align: center;
     margin-top: 32px;
     display: flex;
     justify-content: space-evenly;
+  }
+  &__hourglass {
+    display: none;
   }
 }
 .project-name {
