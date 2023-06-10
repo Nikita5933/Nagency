@@ -153,6 +153,9 @@
     &__location {
       & a {
         display: block;
+        &::after {
+          top: 12px;
+        }
       }
     }
     &__wrapper {
@@ -360,13 +363,6 @@
     }
   }
   .contact-page {
-    &__location {
-      & a {
-        &::after {
-          top: 12px;
-        }
-      }
-    }
     &__title {
       font-size: 44px;
     }
@@ -1098,6 +1094,26 @@
       margin-bottom: 24px;
     }
   }
+  .faq {
+    margin: 80px 0;
+    &__link {
+      justify-content: flex-start;
+    }
+    &__title {
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 52px;
+      text-align: initial;
+    }
+    &__tabs {
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-start;
+    }
+    &__wrapper {
+      margin: 42px 0 0 0;
+    }
+  }
 }
 @media (max-width: 450px) {
   .footer {
@@ -1188,4 +1204,5 @@
       gap: 10px;
     }
   }
+
 }

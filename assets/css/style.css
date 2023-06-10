@@ -1516,7 +1516,7 @@ body {
       content: "";
       position: absolute;
       background: url("../img/icons/Location.svg") no-repeat;
-      top: 0;
+      top: -4px;
       left: 0;
       width: 36px;
       height: 36px; }
@@ -2165,6 +2165,8 @@ body {
 
   .contact-page__location a {
     display: block; }
+    .contact-page__location a::after {
+      top: 12px; }
   .contact-page__wrapper {
     padding: 25px; }
   .contact-page__block {
@@ -2290,8 +2292,6 @@ body {
     margin-right: 20px;
     width: 52%; }
 
-  .contact-page__location a::after {
-    top: 12px; }
   .contact-page__title {
     font-size: 44px; }
   .contact-page__form-email {
@@ -2796,7 +2796,23 @@ body {
       line-height: 35px;
       margin-bottom: 24px; }
     .project-name__text {
-      margin-bottom: 24px; } }
+      margin-bottom: 24px; }
+
+  .faq {
+    margin: 80px 0; }
+    .faq__link {
+      justify-content: flex-start; }
+    .faq__title {
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 52px;
+      text-align: initial; }
+    .faq__tabs {
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: flex-start; }
+    .faq__wrapper {
+      margin: 42px 0 0 0; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; }
