@@ -2062,6 +2062,9 @@ body {
     margin-left: 22px; }
 
 @media (max-width: 1399px) {
+  .main:has(.not-found) {
+    min-height: initial; }
+
   .container {
     width: 95%; }
 
@@ -2205,7 +2208,12 @@ body {
   .project-name__wrapper {
     justify-content: space-around; }
   .project-name__section {
-    max-width: 675px; } }
+    max-width: 675px; }
+
+  .not-found {
+    margin-top: 60px; }
+    .not-found__title {
+      margin-top: 0; } }
 @media (max-width: 991px) {
   .header__pictures {
     display: none; }
@@ -2335,7 +2343,11 @@ body {
   .project-name__wrapper {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 40px; } }
+    gap: 40px; }
+
+  .not-found {
+    margin-top: 35px;
+    padding-bottom: 30px; } }
 @media (max-width: 767px) {
   .burger__wrapper {
     position: absolute;
@@ -2393,6 +2405,8 @@ body {
         display: none; }
     .header__title {
       padding-top: 0; }
+    .header_not-found {
+      position: initial; }
 
   .btn_mobile {
     display: flex; }
@@ -2534,7 +2548,10 @@ body {
     margin-bottom: 16px; }
   .project-name__web {
     grid-column: 1;
-    grid-row: 3; } }
+    grid-row: 3; }
+
+  .not-found__title {
+    font-size: 160px; } }
 @media (max-width: 575px) {
   .header__title {
     font-size: 48px;
@@ -2812,7 +2829,26 @@ body {
       gap: 16px;
       justify-content: flex-start; }
     .faq__wrapper {
-      margin: 42px 0 0 0; } }
+      margin: 42px 0 0 0; }
+
+  .not-found {
+    background-size: 190%;
+    background-position-x: -165px;
+    background-position-y: 40px;
+    padding-bottom: 130px;
+    margin-top: 0; }
+    .not-found__title {
+      font-size: 100px;
+      line-height: 121px; }
+    .not-found__subtitle {
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 19px; }
+    .not-found__text {
+      font-size: 14px;
+      line-height: 30px; }
+    .not-found__btn {
+      margin: 19px auto 30px auto; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; }
@@ -2826,7 +2862,10 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr; }
       .trusted__wrapper img {
-        width: 100%; } }
+        width: 100%; }
+
+  .not-found {
+    padding-bottom: 50px; } }
 @media (max-height: 420px) {
   .header__menu {
     gap: 20px; } }

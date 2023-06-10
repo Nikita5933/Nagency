@@ -1,4 +1,9 @@
 @media (max-width: 1399px) {
+  .main {
+    &:has(.not-found) {
+      min-height: initial;
+    }
+  }
   .container {
     width: 95%;
   }
@@ -224,9 +229,16 @@
       max-width: 675px;
     }
   }
+  .not-found {
+    margin-top: 60px;
+    &__title {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (max-width: 991px) {
+
   .header {
     &__pictures {
       display: none;
@@ -435,6 +447,10 @@
       gap: 40px;
     }
   }
+  .not-found {
+    margin-top: 35px;
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   .burger {
@@ -504,6 +520,9 @@
     }
     &__title {
       padding-top: 0;
+    }
+    &_not-found {
+      position: initial;
     }
   }
   .btn_mobile {
@@ -725,6 +744,11 @@
       grid-row: 3;
     }
   }
+  .not-found {
+    &__title {
+      font-size: 160px;
+    }
+  }
 }
 @media (max-width: 575px) {
   .header {
@@ -746,6 +770,7 @@
       height: 300px;
       min-height: 300px;
     }
+
   }
   .service {
     margin-top: 20px;
@@ -1114,6 +1139,30 @@
       margin: 42px 0 0 0;
     }
   }
+  .not-found {
+    background-size: 190%;
+    background-position-x: -165px;
+    background-position-y: 40px;
+    padding-bottom: 130px;
+    margin-top: 0;
+    &__title {
+      font-size: 100px;
+      line-height: 121px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 19px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &__btn {
+      margin: 19px auto 30px auto;
+    }
+
+  }
 }
 @media (max-width: 450px) {
   .footer {
@@ -1136,6 +1185,9 @@
         width: 100%;
       }
     }
+  }
+  .not-found {
+    padding-bottom: 50px;
   }
 }
 @media (max-height: 420px) {
