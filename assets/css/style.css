@@ -1336,8 +1336,9 @@ body {
         background: url("../img/icons/check.svg") no-repeat;
         width: 16px;
         height: 16px;
-        top: 4px;
-        left: 0; }
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); }
 
 .detail-service {
   margin-top: 100px;
@@ -2099,6 +2100,9 @@ body {
     width: 300px; }
 
   .conditions__block {
+    max-width: initial; }
+
+  .policy__block {
     max-width: initial; } }
 @media (max-width: 1199px) {
   .header__pictures {
@@ -2864,7 +2868,18 @@ body {
         line-height: 52px; }
       .conditions__block h3 {
         font-size: 24px;
-        line-height: 35px; } }
+        line-height: 35px; }
+
+  .policy {
+    margin: 80px 0; }
+    .policy__title {
+      font-size: 32px;
+      line-height: 52px;
+      margin-bottom: 26px; }
+    .policy__subtitle {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 6px; } }
 @media (max-width: 450px) {
   .footer__form-input {
     padding-right: 56px; }
@@ -2915,7 +2930,10 @@ body {
   .join-form__location, .join-form__phone, .join-form__email {
     font-size: 14px; }
     .join-form__location a, .join-form__phone a, .join-form__email a {
-      font-size: 14px; } }
+      font-size: 14px; }
+
+  .policy__header .title {
+    margin: 24px 0 12px 0; } }
 @media (max-height: 300px) {
   .header__menu {
     gap: 10px; } }

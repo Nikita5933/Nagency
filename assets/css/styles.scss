@@ -1483,9 +1483,9 @@ body {
         background: url("../img/icons/check.svg") no-repeat;
         width: 16px;
         height: 16px;
-        top: 4px;
         left: 0;
-
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
