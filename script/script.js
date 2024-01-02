@@ -4,10 +4,17 @@ const  uploadButton = document.getElementById('upload-button'),
        fileName = document.getElementById('file-name'),
        container = document.querySelector('.join-form__drop'),
        error = document.getElementById('error'),
+        sliderItems = document.querySelectorAll('.carousel__navigation-item a'),
        imageDisplay = document.getElementById('image-display');
 
 
-
+console.log(sliderItems)
+sliderItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        sliderItems.forEach(item => item.classList.remove('carousel__navigation-button_active'))
+        e.target.classList.add('carousel__navigation-button_active');
+    })
+})
 const fileHandler = (file, name, type) => {
     if (type.split('/')[0] !== 'image') {
         error.innerText = 'Please upload an image file';
